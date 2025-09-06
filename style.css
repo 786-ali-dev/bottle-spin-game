@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 90%;
+    width: 400px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.bottle-container {
+    width: 200px;
+    height: 200px;
+    border: 2px dashed #ccc;
+    border-radius: 50%;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #e9e9e9;
+}
+
+#bottle {
+    width: 100px; /* Adjust bottle size as needed */
+    height: auto;
+    cursor: pointer;
+    transition: transform 4s ease-out; /* Smooth spin transition */
+    transform-origin: center center;
+}
+
+#spinButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+#spinButton:hover {
+    background-color: #45a049;
+}
+
+#spinButton:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+#message {
+    margin-top: 25px;
+    font-size: 1.1em;
+    color: #555;
+    min-height: 25px; /* To prevent layout shift */
+}
